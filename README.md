@@ -5,4 +5,6 @@
     $db  = "db1";
 
 
-    INSERT INTO contact1# Dental-Appointment-Booking-Website
+    INSERT INTO contact1
+    
+    # Dental-Appointment-Booking-Website
