@@ -4,8 +4,8 @@ include ("connection.php");
 
 if(isset($_POST['submit'])){
 
-   $name = mysqli_real_escape_string($conn, $_POST['name']);
-   $email = mysqli_real_escape_string($conn, $_POST['email']);
+   $name = $_POST['name'];
+   $email = $_POST['email'];
    $number = $_POST['number'];
    $date = $_POST['date'];
    $insert = mysqli_query($conn, "INSERT INTO `contact1`(name, email, number, date) VALUES('$name','$email','$number','$date')") or die('query failed');
