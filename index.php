@@ -30,48 +30,14 @@ if(isset($_POST['submit'])){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section starts -->
-        <div class="header">
-            <div class="container header-wrapper">
-            <div class="logo"><img src="./images/Dental-logo-on-transparent-PNG-1.png" alt="" class="image"><br>Dental<span> Care</span></div>
-            <div class="links primary">
-                <a href="#">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#reviews">Reviews</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-
-            <div class="mainbutton">
-                <a href="#contact" type="button" class="my-btn btn-primary">Make Appointment</a>
-            </div>
-
-            <div class="menu">
-                <i class="fa fa-bars fa-2x" aria-hidden="true" id="navBtn" style="color: white;"></i>
-                <i class="fa fa-times fa-2x" aria-hidden="true" id="closeBtn" style="color: white ;"></i>
-            </div>
-
-        </div>
-       
-        </div>
-
-    <!-- Header Section ends -->
-
-    <!-- mobile nav -->
-    <div class="mobile-nav-wrapper">
-        <div class="mobile-nav">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#contact">Contact</a>
-        </div>
-   </div>
-
+    
+<?php
+    require_once ("header.php");
+?>
+<hr>
    
 
     <!-- Home Section starts -->
@@ -100,7 +66,7 @@ if(isset($_POST['submit'])){
     <!-- About Section starts -->
         <div class="about" id="about">
             <div class="container header-wrapper1">
-                <h1>ABOUT US</h1>       
+                <h1 class="text-center">ABOUT US</h1>       
             </div>
             <div class="container">
                 <div class="row">
@@ -164,7 +130,7 @@ if(isset($_POST['submit'])){
     <!-- Reviews Section starts -->
 
     <div class="reviews" id="reviews">
-        <div class="container header-wrapper1">
+        <div class="container header-wrapper1 text-center">
             <h1>SATISFIED CLIENTS</h1>       
         </div>
         <div class="container text-center hi">
@@ -287,30 +253,7 @@ if(isset($_POST['submit'])){
 
 
     <!-- Footer Section ends -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-
-    <script>
-
-        var menu = document.querySelector('#navBtn');
-        var close = document.querySelector('#closeBtn');
-        var menuWrapper = document.querySelector('.mobile-nav-wrapper');
-
-        menu.addEventListener('click',function(e){
-            menuWrapper.style.display = 'block';
-            close.style.display = 'block';
-            menu.style.display = 'none';
-            
-        })
-
-        close.addEventListener('click',function(e){
-            menuWrapper.style.display = 'none';
-            close.style.display = 'none';
-            menu.style.display = 'block';
-            
-        })
-
-    </script>
 
 
 </body>

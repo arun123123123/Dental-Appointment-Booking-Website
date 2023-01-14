@@ -47,11 +47,30 @@ body{
     color: white;
 }
 
+.main{
+    text-align: center;
+    border: 2px solid dodgerblue;
+    width: 35%;
+    border-radius: 5px;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    margin-left: 30%;
+    margin-top: 11%;
+}
+.main h1{
+    color:dodgerblue;
+}
+.main input{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10rem;
+}
+
 
 .header-wrapper{
     padding: 0;
     border: 0;
-    margin: 1rem 3rem;
+    margin: 1rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,15 +169,18 @@ body{
     width: 75vh;
     border-radius: 5px 15px 5px 15px;
     background-size: cover;
+    margin: 0rem -2rem;
 }
 
 .header-wrapper1{
     padding: 0;
     border: 0;
     margin: 3rem 0;
-    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    display: flex;
+
 }
 
 .header-wrapper1 h1{
@@ -168,6 +190,10 @@ body{
     letter-spacing: 1px;
     color: var(--white);
     opacity: 85%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .left1{
@@ -244,6 +270,15 @@ body{
 
 .stars{
     color: var(--blue-dark);
+}
+
+.appoinment h1{
+    color: dodgerblue;
+    text-align: center;
+}
+
+.appoinment hr{
+    background: dodgerblue;
 }
 
 
@@ -438,6 +473,28 @@ body{
         display: block;
     }
 
+    .links{
+        display: none;
+    }
+
+    .main{
+        text-align: center;
+        border: 2px solid dodgerblue;
+        width: 80%;
+        border-radius: 5px;
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+        margin-left: 10%;
+        margin-top: 30%;
+    }
+
+    .main input{
+        margin: 10px;
+        padding: 5px;
+        border-radius: 10rem;
+        border: none;
+    }
+
     
 
 }
@@ -465,6 +522,12 @@ body{
     .menu{
         display: block;
     }
+
+    .links{
+        display: none;
+    }
+
+
 
     
 
